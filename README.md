@@ -20,6 +20,26 @@ Essa abordagem tem ganhado destaque crescente na indústria por favorecer:
 
 **Clojure**, um dialeto moderno do Lisp que roda sobre a JVM (e também em ambientes JavaScript via ClojureScript), é a linguagem escolhida para a aplicação prática desses conceitos. Sua sintaxe minimalista baseada em expressões simbólicas (*s-expressions*), seu forte enfoque em imutabilidade e estruturas de dados persistentes, e sua interoperabilidade nativa com o ecossistema Java fazem dela uma ferramenta poderosa tanto para o aprendizado dos fundamentos teóricos quanto para o desenvolvimento de aplicações reais — sendo inclusive adotada por empresas de tecnologia de ponta, como o Nubank, em sistemas de missão crítica.
 
+## Princípios da Programação Funcional
+
+A programação funcional é uma abordagem de resolução de problemas orientada por ideias como excelente cobertura de testes, maior encapsulamento de código, reutilização e facilidade de manutenção de sistemas. Os princípios abaixo — adotados, por exemplo, pelo Nubank em sua arquitetura de mais de mil microsserviços escritos em Clojure — são a base conceitual explorada ao longo da disciplina:
+
+- **Imutabilidade**: nenhuma variável é modificada durante a execução; todo valor é somente leitura. Quando é preciso "alterar" um dado, cria-se um novo valor a partir do original. É a ideia central da programação funcional e torna a depuração muito mais simples, pois o valor de uma variável nunca muda de forma inesperada durante a execução.
+
+- **Funções de Primeira Classe**: funções não têm restrições especiais e podem ser tratadas como qualquer outra variável — atribuídas, passadas como argumento, retornadas por outras funções ou armazenadas em estruturas de dados.
+
+- **Funções Puras**: para uma mesma entrada, o resultado é sempre o mesmo (ex.: `x + 2 = y`, se `x = 2`, `y` sempre será `4`), sem efeitos colaterais. Isso garante controle total sobre testes e previsibilidade do comportamento do código.
+
+- **Composição de Funções**: soluções complexas são construídas combinando funções pequenas e simples, o que isola a lógica, facilita os testes e reduz o acoplamento entre partes do sistema.
+
+- **Expressões**: toda função deve retornar um valor; evita-se a criação de funções de instrução (procedimentos) com resultado nulo, cujo comportamento interno é mais difícil de prever e controlar — o que melhora a cobertura de testes.
+
+- **Recursão**: como não há variáveis mutáveis, laços tradicionais dão lugar à recursão, que aplica cada passo a partir do resultado anterior. Isso garante mais controle sobre o fluxo do programa e reduz efeitos colaterais comuns em iterações imperativas.
+
+Esses princípios explicam por que empresas como o **Nubank** adotaram Clojure como linguagem principal desde a fundação: além da concisão da sintaxe e da interoperabilidade nativa com a JVM (permitindo o uso de todo o ecossistema Java), a imutabilidade e a pureza das funções resultam em altíssima cobertura de testes, redução de bugs de concorrência e uma arquitetura de software (a "Arquitetura Diplomata") que escala com facilidade — hoje sustentando cerca de mil microsserviços em produção.
+
+> Fonte: [Building Nubank — "Programação funcional com Clojure: por que e como o Nubank usa e escala tão bem?"](https://building.nubank.com/pt-br/programacao-funcional-com-clojure-por-que-e-como-o-nubank-usa-e-escala-tao-bem/)
+
 ## Professor
 
 **Prof. Dr. Aparecido V. de Freitas**
