@@ -1,3 +1,8 @@
+(ns Ex3)
+
+;; ENUNCIADO
+; média ponderada
+
 (defn aprovado_ponderada [nota1, nota2, nota3]
   (println "Nota 1: " nota1)
   (println "Nota 2: " nota2)

@@ -1,5 +1,6 @@
 (ns Ex7)
-
+; função para verificar se uma pessoa pode doar sangue
+; baseado na idade 
 (defn pode-doar-sangue [idade]
   (if (and (>= idade 18) (<= idade 67))
     "Pode doar"

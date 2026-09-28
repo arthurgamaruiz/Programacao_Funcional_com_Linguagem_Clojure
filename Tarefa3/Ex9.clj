@@ -1,5 +1,5 @@
 (ns Ex9)
-
+; checa resultado de operações 
 (defn operacoes-com-checagem [a b]
   (let [soma (+ a b)
         multiplicacao (* a b)]
