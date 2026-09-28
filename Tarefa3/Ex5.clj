@@ -7,4 +7,4 @@
 
 ;; testando
 (sao-iguais 5 5)
-(sao-iguais 3 7)
+(sao-iguais 4 5)
