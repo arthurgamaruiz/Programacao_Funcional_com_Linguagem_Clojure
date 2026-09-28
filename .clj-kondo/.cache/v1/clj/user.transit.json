@@ -1,1 +1,1 @@
-["^ ","~$soma",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[2]],"~:name","^0","~:ns","~$user","~:top-ns",null,"~:arities",["^ ","~i2",["^ ","~:ret","~:number","~:arglist-str","[a b]"]],"~:type","~:fn"],"~:filename","C:\\Users\\arthu\\Documents\\Programacao_Funcional_com_Linguagem_Clojure\\index.clj"]
+["^ ","~$name",["^ ","~:row",2,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$user","~:top-ns","^7","~:type","~:fn"],"~:filename","C:\\Users\\arthu\\Documents\\Programacao_Funcional_com_Linguagem_Clojure\\Tarefa3\\index.clj"]
